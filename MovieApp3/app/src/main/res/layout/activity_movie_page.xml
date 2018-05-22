@@ -1,0 +1,69 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mina.movieapp.MoviePage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Name"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/chosenMovie"
+            android:background="@android:color/holo_purple"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@android:drawable/ic_media_play"
+            android:tint="@color/colorPrimary"
+            android:id="@+id/image"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="overview"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="7dp"
+            android:textSize="20dp"
+            android:background="@android:color/holo_purple"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No overview"
+            android:paddingTop="7dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="7dp"
+            android:id="@+id/overview"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="7dp"
+            android:text="vote rate"
+            android:textSize="20dp"
+            android:background="@android:color/holo_purple"/>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="false"
+            android:id="@+id/retingBar"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            />
+
+    </LinearLayout>
+</ScrollView>
